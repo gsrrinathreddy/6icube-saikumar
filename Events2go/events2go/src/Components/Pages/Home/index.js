@@ -1,52 +1,88 @@
-import BasicCard from "../../BasicCard";
-import { Box } from "@mui/system";
+import BasicCard from '../../BasicCard'
+
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
-import BasicTabs from "../../Tabpanel";
+
+import Box from '@mui/material/Box';
+
+import { IconButton, Typography } from '@mui/material';
+
+import Button from '@mui/material/Button';  
+
+import BasicTabs from '../../Tabs';
+
+import Accorditions from '../../Accorditions';
+
+import Avatar from '@mui/material/Avatar';
+
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 
-import { Typography } from "@mui/material";
+export default function Home(){
 
+ 
 
-
-export default  function Home(){
 
     return(
         <>
+
+
+
+   
+
         <Typography variant="h4" gutterBottom>
+
         Go Kangaroos your appetite starts here!
       </Typography>
+
       <Typography variant="h4" gutterBottom>
+
       All your Events schedule in Events2go
       </Typography>
-      <Typography variant="h4" gutterBottom>
-      Event Manager App
-      </Typography>
-      <Typography variant="h4" gutterBottom>
-      Creative, Engaged, Well-connected, Self-
-      </Typography>
-      <Typography variant="h4" gutterBottom>
-      promoting and Reporting Event Organiser!
-     </Typography>
-        <Grid  xs={4} sx={{margin:"20px",marginLeft:"200px"}}>
-        <Grid container spacing={0}>
-            <BasicCard 
-            image="http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684472297.png"
-            title="Hot brown Honey THE REMIX"
-            description="may 20,2023"
-            />
-            
-            <BasicCard
-            image="http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684239743.png"
-            title="Hyderabads biggest weekend THEME PARTY"
-            description="may 16,2023"
 
-            />
-            
-            <BasicCard
-            image="http://buzzitsolutions.com/events/uploads/upcomingevents/_upcoming_1684239374.png"
-            title="Hot brown Honey THE REMIX"
-            description="may 30,2023"/>
+      <Typography variant="h4" gutterBottom>
+
+      Event Manager App
+
+      </Typography>
+
+      <Typography variant="h4" gutterBottom>
+
+      Creative, Engaged, Well-connected, Self-
+
+      </Typography>
+
+      <Typography variant="h4" gutterBottom>
+
+      promoting and Reporting Event Organiser!
+
+     </Typography>
+
+        <Grid  xs={4} sx={{margin:"20px",marginLeft:"200px"}}>
+
+        <Grid container spacing={0}>
+          
+        <BasicCard
+  image="http://events2go.com.au/uploads/upcomingevents/_upcoming_1684994123.png"
+        title="Diwali"
+        date="May 26,2023"
+        time="10AM to 11PM"
+        location="Sydney,Australia"/>
+        
+   <BasicCard
+   image="http://events2go.com.au/uploads/upcomingevents/_upcoming_1684929750.jpg"
+        title="Mothers day"
+        date="May 27,2023"
+        time="11AM to 4PM"
+        location="Lalor park community centre,1 freeman st,Lalor park NSW 2147"/>
+        
+   <BasicCard
+   image="http://events2go.com.au/uploads/upcomingevents/_upcoming_1684868547.png"
+        title="Accessibility"
+        date="May 20,2023"
+        time="11Am to 12Pm"
+        location="Opera House, Bennelong Point, Sydney NSW 2000, Australia"/>
+        
+           
           </Grid>
         </Grid>
 
@@ -88,55 +124,172 @@ Events2go is the brainchild of our team at Techsphere Solutions Pty Ltd, who env
 
       </Typography>
 
-      <Typography variant="h6" > 
+      <Typography variant='h6'>
+    Below you'll find the schedule for Events 2023. We'll keep this page regularly
+    updated with all new events and sessions, so be sure to keep checking in!
+    </Typography>
+    </Grid>
 
-Below you'll find the schedule for Events 2023. We'll keep this page regularly updated with all new events and sessions, so be sure to keep checking in!
-</Typography>  
-</Grid>   
-        </Grid>
-        <Grid container spacing={0} columns={12}>
-        <Grid  xs={6}>
-       <BasicTabs/> 
-        </Grid>
-       
-        </Grid>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+     <BasicTabs/>
 
-        <Grid  xs={5} sx={{marginTop:"15px",spacing:"2px"}}>
-        May 20, 2023
-11am to 12pm
-Hot Brown Honey THE REMIX - May 30 PARTY
- Devla
- Australia
-Sydney Opera weekends getting lit more than ever!...
-        </Grid>
-        <Grid  xs={5} sx={{marginTop:"15px" }}>
-        May 16, 2023
-11:00 am - 1:00 pm AEST
-Hyderabads Biggest Weekend THEME PARTY
- Sams Events
- Opera House, Bennelong Point, Sydney NSW 2000, Australia
-Sydney Opera weekends getting lit more than ever!...
-
-        </Grid>
-        </Grid>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-      <Grid  xs={5} sx={{marginTop:"15px"}}>
-      May 30, 2023
-11:00 am - 1:00 pm AEST
-Hot Brown Honey THE REMIX - May 30
- Sams Events
- Opera House, Bennelong Point, Sydney NSW 2000, Australia
-Sydney Opera weekends getting lit more than ever!...
-
-     </Grid>
+      <Grid>
+        <Button variant='contained' sx={{backgroundColor:"magenta", marginTop:"40px",marginBottom:"40px",marginLeft:"700px"}}>
+            Event Schedule
+        </Button>
       </Grid>
+      <Grid xs={12}>
       
 
-      
-    </Box>
+    <Typography variant='h4' marginTop="100px">
+
+        Events for  every occation
+    
+    </Typography>
+    </Grid>
+    <Typography variant='h4' marginTop="50px" color="purple">
+    Diversity is our strength, we would like to bring people from all walks of life to work together
+    </Typography>
+
+    <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid xs={3}>
+     <Typography variant='h6'color="purple">
+        Free Events
+     </Typography>
+     <Typography>
+        Standard Free 
+     </Typography>
+     <Typography>
+     Applicable
+     </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="purple">
+        Standard
+     </Typography>
+     <Typography>
+     5% + $1.00
+     </Typography>
+     <Typography>
+     Per paid ticket
+     </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="purple">
+        Charities
+     </Typography>
+     <Typography>
+     2.5% + $0.50
+      </Typography>
+      <Typography>
+      Per paid ticket
+      </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="purple">
+        Custom
+     </Typography>
+     <Typography>
+     Thinking big? Let's talk.
+     </Typography>
+     <Button variant='contained'>
+        Contact Us
+     </Button>
+     </Grid>
+    </Grid>
+    <Typography variant='h6' color="gray" marginTop="70px">
+    All plans include access to all features. Technology, Pricing, Customer Service, and Support will be provided.
+    </Typography>
+    <Typography variant='h5' marginBottom="100px">
+    Quality Service and Customer first.
+    </Typography>
+    <Typography variant='h4'>
+    Creative, Engaged, Well-connected, Self-promoting and 
+    </Typography>
+    <Typography variant='h4'>
+    Reporting Event Organiser!
+    </Typography>
+    <Typography variant='h6' marginTop="10px">
+    Customize your events with our design tools and event builder.
+    </Typography>
+    <Typography variant='h4' marginTop="100px">
+    Our Reviews Latest News & Articles
+    </Typography>
+    <Typography variant='h6'>
+    Events 2023 gathered the brightest minds globally. Explore new skills and
+    </Typography>
+    <Typography variant='h6'>
+    attributes from our experts and practitioners.
+    </Typography>
+
+    <Grid item xs={12} sx={{backgroundColor:"white",p: 4,marginLeft:"110px"}}>
    
-        
+        </Grid>
+        </Grid>
+
+        <Typography variant='h4' marginTop="100px" color="gray">
+          Have Questions?Look Here 
+        </Typography>
+        <Typography variant='h6'>
+        Events 2023 gathered the brightest minds in the tech world. Learn new skills and
+        </Typography>
+        <Typography variant='h6'>
+        get insights from experts and practitioners from all around!
+        </Typography>
+        <Accorditions/>
+
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+        <Grid xs={3}>
+     <Typography variant='h6'color="gray" marginTop="60px">
+     Find events
+     </Typography>
+     <Typography>
+     Search events
+     </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="gray" marginTop="60px">
+     Host events
+     </Typography>
+     <Typography>
+     All features
+     </Typography>
+     <Typography>
+     Pricing
+     </Typography>
+     <Typography>
+     FAQs
+     </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="gray" marginTop="60px">
+     Get in touch
+     </Typography>
+     <Typography>
+     Help
+      </Typography>
+      <Typography>
+      Contact us
+      </Typography>
+     </Grid>
+     <Grid xs={3}>
+     <Typography variant='h6'color="gray" marginTop="60px">
+     Follow us on
+     </Typography>
+     <IconButton>
+     <FacebookIcon/><Avatar marginBottom="10px">in</Avatar>
+     </IconButton>
+     </Grid>
+    </Grid>
+
+    <Grid xs={12} marginRight="850px" marginTop="100px">
+        <Typography>
+        © Copyright Events2go. All Rights Reserved
+        </Typography>
+    </Grid>
+  
+    </Box>
         </>
     )
 }
+      
+   

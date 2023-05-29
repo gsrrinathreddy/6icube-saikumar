@@ -5,34 +5,34 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
-export default function BasicCard(props) {
+export default function ContactCard(props) {
     const image=props.image;
     const title=props.title;
-    const description=props.description
+   
   return (
-    <Card sx={{ maxWidth: 345, height:"300px", width:"300px",margin:"20px"}}>
+    <Card sx={{ maxWidth: 345, height:"500px", width:"400px",margin:"40px"}}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 200 }}
         image={props.image}
-        title="green iguana"
+        title={props.title}
+        description1={props.description1}
+        description2={props.description2}
+
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-       <CalendarMonthIcon/>{props.date}
+         {props.description1}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          <AccessTimeIcon/>{props.time}
+         {props.description2}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
-          <LocationOnIcon/>{props.location}
-        </Typography>
+       
+       
+       
         
       </CardContent>
       

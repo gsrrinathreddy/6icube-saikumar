@@ -9,14 +9,15 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
+
 export default function BasicCard(props) {
     const image=props.image;
     const title=props.title;
-    const description=props.description
+   
   return (
-    <Card sx={{ maxWidth: 345, height:"300px", width:"300px",margin:"20px"}}>
+    <Card sx={{ maxWidth: 345, height:"500px", width:"400px",margin:"40px"}}>
       <CardMedia
-        sx={{ height: 140 }}
+        sx={{ height: 200 }}
         image={props.image}
         title="green iguana"
       />
@@ -25,7 +26,7 @@ export default function BasicCard(props) {
           {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-       <CalendarMonthIcon/>{props.date}
+         <CalendarMonthIcon/> {props.date}
         </Typography>
         <Typography variant="body2" color="text.secondary">
           <AccessTimeIcon/>{props.time}
