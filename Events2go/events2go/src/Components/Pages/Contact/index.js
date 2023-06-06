@@ -1,21 +1,21 @@
 import Typography from '@mui/material/Typography';
 import ContactCard from '../../ContactCard';
-import { IconButton } from '@mui/material';
+
 import Box from '@mui/material/Box';
 
 import Grid from '@mui/material/Grid';
+import { TextField } from '@mui/material';
 
-import FacebookIcon from '@mui/icons-material/Facebook';
 
-import Avatar from '@mui/material/Avatar';
 
 
 export default  function Contact(){
 
 
     return(
+
          <>
-         <Typography variant="h4" gutterBottom>
+         <Typography variant="h4" gutterBottom marginTop="150px">
         Contact Us
       </Typography>
       <Box sx={{ width: '100%' }}>
@@ -23,7 +23,7 @@ export default  function Contact(){
             <Grid xs={4}>
           
         <ContactCard
-         image="https://lh3.googleusercontent.com/g2YPmCGBZjCatKt2GLb55aGRvlZBDW6TFi-U5TYQkilM7JcQvZIrUOfJHq9BrFmSoOWg3LdJ4MiD8OB41WL5R6HTlAIAt7G_MaXAamU" height="30px"
+         image="https://th.bing.com/th/id/OIP.EyRP4-vTfImJS_to73mHLwHaFf?w=186&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" height="30px"
          title="Our Location"
          description1="48 Cameron St"
          description2="Doonside NSW2767"
@@ -33,7 +33,7 @@ export default  function Contact(){
      
             <Grid xs={4}>
          <ContactCard
-         image="https://lh3.googleusercontent.com/wANSydnv6j_P8GdW36168nF8NxmpGNv50_FIrdQjVfOFfpIDtzdTdoNkFLS9lYpGUfUlNEg2Evw3R3O1Ap-QPIRzowFXp-UB5xil_FX9" height="30px"
+         image="https://th.bing.com/th?q=Telegram+Icon+HD&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" height="30px"
          title="Drop A Line"
          description1="infoevents2go@gmail.com"
          description2="infotechspheresolutions@gmail.com"
@@ -41,65 +41,35 @@ export default  function Contact(){
         </Grid>
         <Grid xs={4}>
          <ContactCard
-         image="https://lh3.googleusercontent.com/2pMEYxKyhcH3U1VDKe3InjQvs7cLsqKO3NfVODGdXMc2kLWnyqSerIR1S5MJu9UtepUhg6BovE3uSQAa04S_x43iSVk1kiAMFRh9orle" height="30px"
+         image="https://th.bing.com/th?q=Mobile+Icon+Blue&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" height="30px"
          title="Let's Talk"
          description1="Tel: +61 431 622 292"
 
          description2="Tel: +61 422 202 766"
         />
          </Grid>
-         
-        </Grid>
-        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Find events
-     </Typography>
-     <Typography>
-     Search events
-     </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Host events
-     </Typography>
-     <Typography>
-     All features
-     </Typography>
-     <Typography>
-     Pricing
-     </Typography>
-     <Typography>
-     FAQs
-     </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Get in touch
-     </Typography>
-     <Typography>
-     Help
+         </Grid>
+         <Typography variant="h4" gutterBottom >
+         Send A Message
       </Typography>
-      <Typography>
-      Contact us
-      </Typography>
-     </Grid>
-     <Grid xs={3}>
-     <Typography variant='h6'color="gray" marginTop="60px">
-     Follow us on
-     </Typography>
-     <IconButton>
-     <FacebookIcon/><Avatar marginBottom="10px">in</Avatar>
-     </IconButton>
-     </Grid>
-    </Grid>
 
-    <Grid xs={12} marginRight="850px" marginTop="100px">
-        <Typography>
-        © Copyright Events2go. All Rights Reserved
-        </Typography>
-    </Grid>
+      <Typography variant="h6" gutterBottom >
+      Please don't hesitate to get in touch with us anytime
+      </Typography>
+      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid xs={2}></Grid>
+<Grid xs={8}>
+<TextField fullWidth label="Enter Your name*" id="fullwidth" />
+<TextField fullWidth label="Enter Your Email*" id="fullWidth" sx={{marginTop:"30px"}}/>
+<TextField fullWidth label="Your Message" id="fullWidth" sx={{marginTop:"30px"}}/>
+
+</Grid>
+<Grid xs={2}></Grid>
+</Grid>   
+        
+         
         </Box>
+       
         </>
     )
 } 

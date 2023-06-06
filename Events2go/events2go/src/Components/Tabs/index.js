@@ -63,7 +63,7 @@ export default function LabTabs() {
                 </Typography>
             </Grid>
 
-            <Grid xs={12}>
+            <Grid xs={6} marginTop="50px">
                 <Typography variant='h6'>
                 Hot Brown Honey THE REMIX - May 30
                 </Typography>

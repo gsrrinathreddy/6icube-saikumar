@@ -10,9 +10,14 @@ import Container from '@mui/material/Container';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-//import Eventlogo from '@mui/icons-material/Adb';
+import MenuItem from '@mui/material/MenuItem'
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+
+
+
+
 
 const pages = ['Home', 'About', 'Events','Blog','Contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -20,7 +25,7 @@ const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
-
+  const navigate= useNavigate();
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -35,13 +40,20 @@ function Navbar() {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
+  const onLogin=(e)=>{
+    e.preventDefault();
+    navigate('/Login')
+  }
+  const onSignUp=(e)=>{
+    e.preventDefault();
+    navigate('/SignUp')
+  }
   return (
     <AppBar position="static" sx={{backgroundColor:"white"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
          <img src="http://events2go.com.au/assets/front/images/logo-white.png"/>
-            
+            <Box sx={{flexGrow:1}}/>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -112,34 +124,17 @@ function Navbar() {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-             
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+          <Box sx={{ flexGrow: 1}}>
+            
+             <Button variant='contained' onClick={onLogin} sx={{marginRight:"20px"}}>
+              LOGIN
+             </Button>
+             <Button variant='contained' onClick={onSignUp} >
+              SIGNUP
+             </Button>
+        
+            
+     
           </Box>
         </Toolbar>
       </Container>

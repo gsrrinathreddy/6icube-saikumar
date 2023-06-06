@@ -20,7 +20,7 @@ export default function Accordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography sx={{ width: '43%', flexShrink: 0,marginTop:"40px" }}>
+          <Typography sx={{  flexShrink: 0,marginTop:"40px",marginLeft:"50px" }}>
           WHAT IS EVENTS2GO?
           </Typography>
         </AccordionSummary>
@@ -40,7 +40,7 @@ export default function Accordions() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography sx={{ width: '43%', flexShrink: 0 ,marginRight:"50px"}}>HOW DO I SELL TICKETS?</Typography>
+          <Typography sx={{  flexShrink: 0 ,marginLeft:"50px"}}>HOW DO I SELL TICKETS?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -55,7 +55,7 @@ export default function Accordions() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography sx={{ width: '43%', flexShrink: 0 }}>
+          <Typography sx={{ flexShrink: 0 ,marginLeft:"50px"}}>
           COST OR PRICING?
           </Typography>
         </AccordionSummary>
@@ -71,7 +71,7 @@ export default function Accordions() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography sx={{ width: '43%', flexShrink: 0 }}>CAN I SCAN TICKETS USING THE EVENTS2GO APP?</Typography>
+          <Typography sx={{ flexShrink: 0,marginLeft:"50px" }}>CAN I SCAN TICKETS USING THE EVENTS2GO APP?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -85,7 +85,7 @@ export default function Accordions() {
           aria-controls="panel5bh-content"
           id="panel5bh-header"
         >
-          <Typography sx={{ width: '37%', flexShrink: 0 }}>WHAT KIND OF EVENTS CAN BE ACCESSED THROUGH EVENTS2GO APP?</Typography>
+          <Typography sx={{flexShrink: 0,marginLeft:"50px" }}>WHAT KIND OF EVENTS CAN BE ACCESSED THROUGH EVENTS2GO APP?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
+
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
+
 import Typography from '@mui/material/Typography';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
@@ -14,7 +14,7 @@ export default function BasicCard(props) {
     const title=props.title;
     const description=props.description
   return (
-    <Card sx={{ maxWidth: 345, height:"300px", width:"300px",margin:"20px"}}>
+    <Card sx={{ maxWidth: 345, height:"350px",margin:"20px"}}>
       <CardMedia
         sx={{ height: 140 }}
         image={props.image}
@@ -24,13 +24,13 @@ export default function BasicCard(props) {
         <Typography gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" textAlign="justify">
        <CalendarMonthIcon/>{props.date}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" textAlign="justify">
           <AccessTimeIcon/>{props.time}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" textAlign="justify">
           <LocationOnIcon/>{props.location}
         </Typography>
         
